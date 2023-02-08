@@ -1,0 +1,213 @@
+/*reset css*/
+
+@charset "utf-8";
+/* CSS Document*/
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+padding: 0;
+margin: 0;
+font-size: 100%;
+font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+
+/*fin del reset css / comienzo del estilo CSS de la pagina*/
+
+body{
+    font-family: 'verdana';
+}
+
+/*aqui los titulos*/
+
+h1{
+    text-align: center;
+    font-family: 'montserrat';
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2{
+    font-family: 'helvetica';
+    font-weight: bold;
+    font-size: 2.3em;
+    color: #ef9273;
+}
+
+h3{
+    /* margin-top: 15px;
+    margin-left: 50px; */
+    font-family: 'helvetica';
+    font-size: 1.5em;
+    color:#0d0d0d;
+}
+
+h5{
+    font: normal 1em 'personalized-font';
+}
+
+/*este es el comando para cargar una fuente desde un archivo en la carpeta de nuestro site*/
+
+@font-face {
+    font-family: 'personalized-font';
+    src:url("Quicksand_Book.otf")
+}
+
+@font-face {
+    font-family: 'personalized-font1';
+    src:url("Palatino.ttf")
+}
+/* aqui pondre una class center para centrar cosas */
+
+.margins{
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+.centrar{
+    text-align: center;
+}
+/* CLASS*/
+
+.containerflex3{
+    display: flex;
+}
+
+.boxflex1{
+    margin-top: 2px;
+    background-color: #ef9273;
+    width: 32%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.boxflex2{
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 32%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+    border:#ef9273 2px solid;
+}
+
+.boxtextwb{
+    background:#fef9f8;
+    color: black;
+    margin-bottom: 10px;
+    padding:10px
+}
+
+.boxtextpb{
+    background:#ef9273;
+    color: black;
+    margin-bottom: 10px;
+    padding:10px
+}
+
+.times-new-roman {
+	font-family: 'Times New Roman', serif;
+}
+
+.courier {
+	font-family: 'Courier', monospace;
+    font-size: 2.2em;
+}
+
+.sanserif{
+    font-family: sans-serif;
+    font-size: 2em;
+}
+
+.palatino {
+    font-family: 'palatino', serif;
+}
+
+.quicksandbook{
+    font: normal 1.1em 'personalized-font';
+    font-weight: 200;
+}
+
+.montserrat{
+    font-family: 'montserrat';
+}
+
+.colibri{
+    font-family: 'calibri';
+    font-size: large;
+} 
+
+.verona{
+    font-family: 'verona';
+    font-size: large;
+}
+
+/* clase para la hr */
+
+.divisora{
+    color:#ef9273;
+    height: 1px;
+    background: #ef9273;
+}
+
+/* aqui la id para el header */
+
+#headerdelapagina{
+    background-color: #ef9273;
+    padding-bottom: 10px;
+}
+
+/* aqui la id para section */
+
+#sectiondelapagina{
+    background-color: #fef9f8;
+}
+
+/* id para article */
+
+/* #elarticle{
+    margin-left: 100px;
+    margin-right: 100px;
+} */
+
+/* id para titulo con times */
+
+#titulocontimes{
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 1.8em;
+    color:#0d0d0d;
+}
+
+/* id para titulo palatino */
+
+#tituloconpalatino{
+    font: normal 2.4em 'personalized-font1';
+    color:#0d0d0d;
+    /*font-family:'Palatino' ;*/
+}
+
+/* id para titulo impact */
+
+#tituloconimpact{
+    font-family:"Impact" ;
+    font-weight: lighter;
+    color:#0d0d0d;
+    font-size: 2.3em;
+}
+
+    /* id para titulo Montserrat */
+
+    #tituloconmontserrat{
+    font-family:'montserrat' ;
+    color:#0d0d0d;
+    font-size: 1.7em
+}
+
+/* id para textodeheader */
+
+#textodeheader{
+    font-size: 0.8em
+}
