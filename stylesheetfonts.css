@@ -49,6 +49,10 @@ h5{
     font: normal 1em 'personalized-font';
 }
 
+figure {
+    margin: 0;
+}
+
 /*este es el comando para cargar una fuente desde un archivo en la carpeta de nuestro site*/
 
 @font-face {
@@ -113,7 +117,7 @@ h5{
 }
 
 .courier {
-	font-family: 'Courier', monospace;
+	font-family: 'Courier Prime', monospace;
     font-size: 2.2em;
 }
 
