@@ -99,7 +99,7 @@ figure{
     .nav li a{
         color: #6958e4;
         text-decoration:none;
-        padding:10px 12px;
+        /* padding:10px 12px; */
         display:block; 
         }
     
