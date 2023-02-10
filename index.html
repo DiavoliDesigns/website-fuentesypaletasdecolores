@@ -4,298 +4,315 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fuentes y paletas</title>
+    <title>Ollin - Fonts for Websites</title>
+    <link rel="stylesheet" href="stylesheetfonts1.css" >
+    <link rel="icon" href="imagenes/sextosol.jpg">
 
-    <link rel="stylesheet" href="stylesheetfonts.css">
-    
-    <!-- here the google fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet"> 
-
-    
-    <link rel="icon" href="imagenes/logoencabezado.png">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
-
 <body>
-    <header id="headerdelapagina">
 
-        <h1>Fonts for websites</h1>
-        <p class="centrar" id="textodeheader">This is a h1 tag title in Montserrat</p>
-
+    <header>
+        <section id="marginnav">
+            <img id="logo" src="imagenes/Ollin logo letras.png" alt="Ollin Designs" >
+            <nav class="menu">
+                <ul class="nav">
+                    <!-- <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a>
+                            <ul>
+                                <li><a href="#">Professional profile</a></li>
+                                <li><a href="#">About me</a> </li>
+                                <li><a href="#">Other</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li> -->
+                    <li><button id="botonmenu">Español</button></li>
+                </ul>
+            </nav>
+        </section>
     </header>
-    
+
     <main>
 
-        <section class="margins">
-            <div class="sanserif">
+        <section class="fontsforwebcontent">
+            <div id="title">
+                <h1>Fonts for websites</h1>
+                <p> This is a h1 tag title in Montserrat</p>
+            </div>
+        </section>
+
+        <section class="fontsforwebcontent">
+            <div class="normaltext">
                 <article>
+                    <h2>The importance of fonts in your projects</h2>
+                    <br><br>
+                    <p>It is important to know how to choose fonts for our projects. Not all computers have the same fonts installed. If you don't take into account some important processes regarding your fonts, 
+                        your website will look different from what you want it to. It will look different from what you designed.</p>
+                        <br>
+                    <p>For example, if the font you chose is not installed on a computer, will result in your page looking different.</p>
                     <br>
-                    <p>It is important to know how to choose fonts for our projects. Not all computers have the same fonts installed. You chose a font you like, and you see it on a 
-                        computer that does not have it installed, will result in your page looking different. </p>
+                    <p>On this page, we are going to investigate web fonts. My goal is to learn the necessary steps to get my websites to display the way I want them to on all browsers and devices. Here you will find 
+                        some methods and instructions for installing and using fonts. I will add to this page as the research progresses.</p>
+                </article>
+                <br>             
+                <hr>
+            </div>
+        </section>
+
+        <section class="fontsforwebcontent">
+            
+            <div class="normaltext">
+                <article>
+                    <h3>Summary</h3>
+                    <ul>
+                        <li><a href="#about">About fonts</a></li>
+                        <li><a href="#displayed">How to make sure fonts are displayed correctly everywhere</a>  </li>
+                        <li><a href="#titles">Titles</a> </li>
+                        <li> <a href="#paragraph">Paragraph fonts</a>  </li>
+                    </ul>   
+                    
+                    <br><br>
+                    
+                </article>
+                <br>
+                <hr>
+            </div>
+        </section>
+
+        <section class="fontsforwebcontent">
+            
+            <div class="normaltext">
+                <article>
+                    <h2 id="about">About fonts</h2>
+                    <br><br>
+                    <h3>Typography Basics</h3>
+                    <p>There are five basic classifications of typefaces: <strong>serif, sans serif, script, monospaced, and display.</strong> </p>
                     <br>
+                    <ul>
+                        <li>Serif: Garamond, Baskerville, Perpetua</li>
+                        <li>Sans serif: Helvetica, Arial, Verdana</li>
+                        <li>Script: Those are less common. E.G. Old English</li>
+                        <li>Monospaced: Courier New</li>
+                        <li>Display: less used, E.G. Broadway</li>
+                    </ul>
+                    <br>
+                    <p><a href="https://www.toptal.com/designers/typography/typeface-classification" target="_blank">Here is a very good article </a>about fonts</p>
+                    
+                </article>
+                <br>
+                <hr>
+            </div>
+        </section>
+
+        <section class="fontsforwebcontent">
+            <div class="normaltext">
+                <article>
+                    <h2 id="displayed">How to make sure fonts are displayed correctly everywhere</h2>
+                    <br><br>
+                    <p>There are several ways to insert your fonts into a web page. Here we will look at some of them:</p>
+                    <br>
+                    <h3>Google Fonts</h3>
+                    <p>Google fonts is very easy to use. Just go to the page, choose some fonts and copy the code that the wizard generates into the head of your HTML page. Of course, 
+                        each page you want to use these fonts must have the code generated by Google in the head. This tells your page to fetch those fonts from Google's database. 
+                        This way you make sure that the font you chose will always be displayed correctly in any browser and on any device. You should also copy the CSS rules that the 
+                        wizard automatically generates for you.</p>
+                        <br>
+                    <h3>Download font and put it in your project folder using the CSS rule @font-face</h3>
+                    <p>You must first search for your font on the web. Once you find the font you want, download it. You should look for a file with an .otf extension, for example, Quicksand.otf. 
+                        This is your font file. Once you find it, you have to make sure you copy it to your website folder.</p>
+                        <br>
+                        <p>I will now show you how I introduced the Quicksand Book font to this page.</p>
+                        <br>
+                        <p> <strong>1.</strong> Let's imagine that my computer does not have the Quicksand Book font installed. No problem! With this method any browser or device will take the font from my project folder. 
+                            For this purpose, we use the CSS rule @font-face</p>
+                            <br>
+
+                        <figure><img src="imagenes/fontfacequicksand.JPG" alt="@font-face">
+                        <figcaption>So I wrote the CSS rule @font-face to take the font from the Quicksand Book file I have in my project folder.</figcaption>
+                        </figure>
+                        <br><br>
+                        <p> <strong>2.</strong>  Now the font is available in the page styles. Next, the next step is to assign it to a class or id. This way, the font can be loaded with an HTML tag.</p>
+                        <br>
+                        <figure><img src="imagenes/clasequicksand.JPG" alt="Clase quicksand">
+                        <figcaption>I created the class .quicksandbook in my Stylesheet</figcaption>
+                        </figure>
+                        <br><br>
+                        <p> <strong>3.</strong>  Now the font is available in the page styles. Next, the next step is to assign it to a class or id. This way, the font can be loaded with an HTML tag.</p>
+                        <br>
+                        <figure><img src="imagenes/parrafoconclase.JPG" alt="a paragraph with quicksand">
+                        <figcaption>This paragraph calls the class .quicksabdbook</figcaption>
+                        </figure>
+                        <br>
+                        <div class="highochre">
+                            <p class="quicksandbook">And this is the result, as you can see here we have a Quicksandbook font paragraph. Now, any HTML tag that I give this class to will appear in this font in the browser
+                            </p>
+
+                        </div>
+                        
                 </article>
 
             </div>
+        </section>
+
+        <section class="fontsforwebcontent">
+            <div class="normaltext">
+                <hr>
+                <br>
+                <h2 id="titles">Titles</h2>
+                <p class ="centrar">this is a title with Helvetica but is doesnt work</p>
+
+            </div>
+
+            <div class="containerflex3">
+                <div class="boxflex1">
+                    <h3 class="flexbox3title times-new-roman"> Titles in Times New Roman </h3>
+                    <br>
+                    <div class="boxtextwb">
+                        <p class="centrar">Times New Roman is a serif typeface commissioned by newspaper The Times (London).</p>
+                    </div>
+                    
+                </div>
+                <div class="boxflex2">
+                    <h3 class="flexbox3title palatino"> Titles in Palatino </h3>
+                    <br>
+                    <div class="boxtextpb">
+                        <p class="centrar">Palatino is the name of an old-style serif typeface designed by Hermann Zapf, initially released in 1949 by the Stempel foundry and later by other companies, most notably the Mergenthaler Linotype Company.</p>
+                    </div>
+                </div>
+                <div class="boxflex1">
+                    <h3 class="flexbox3title impact"> Titles in Impact </h3>
+                    <br>
+                    <div class="boxtextwb">
+                        <p class="centrar">Impact is a sans-serif typeface in the industrial or grotesk style designed by Geoffrey Lee in 1965 a It is well known for having been included in the core 
+                            fonts for the Web package and distributed with Microsoft Windows since Windows 98. In the 2010s, it gained popularity for its use in image macros and other internet memes.[</p>
+                    </div>
+                </div>
+
+            </div>
+            <br> <br><br>
+            <div class="containerflex3">
+                <div class="boxflex1">
+                    <h3 class="flexbox3title montserrat"> Titles in Montserrat </h3>
+                    <br>
+                    <div class="boxtextwb">
+                        <p class="centrar">Montserrat is a geometric sans-serif typeface designed by Argentine graphic designer Julieta Ulanovsky and released in 2011. It was inspired by posters, signs and painted windows from the first half of the twentieth century, 
+                            seen in the historic Montserrat neighbourhood of Buenos Aires.</p>
+                    </div>
+                    
+                </div>
+                <div class="boxflex2">
+                    <h3 class="flexbox3title courier"> Titles in Courier </h3>
+                    <br>
+                    <div class="boxtextpb">
+                        <p class="centrar">Courier is a monospaced slab serif typeface. The fallback font is monospace</p>
+                    </div>
+                </div>
+                <div class="boxflex1">
+                    <h3 class="flexbox3title sanserif"> Títles in Sans-serif </h3>
+                    <br>
+                    <div class="boxtextwb">
+                        <p class="centrar">Sans-serif, sans serif, gothic, or simply sans letterform is one that does not have extending features called "serifs" at the end of strokes.[</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="fontsforwebcontent">
             
-            <article>
-                <hr class="divisora">
+            <div class="normaltext">
+                <hr>
                 <br>
-                <div class="centrar">
-                    <h2> Los títulos </h2>
+                <article>
+                    <h2 id="paragraph">Paragraph fonts</h2>
                     <br>
-                    <p>Este es un título h2 en helvetica.</p>
-                </div>
-                <br>
-                <div class="containerflex3">
-                    <div class="boxflex1">
-                        <h3 id="titulocontimes" class="centrar times-new-roman"> Títulos en Times New Roman </h3>
-                        <br>
-                        <div class="boxtextwb">
-                            <p>Se dice que los títulos con Times New Roman tienen una apariencia elegante.</p>
-                        </div>
-                        
-                    </div>
-                    <div class="boxflex2">
-                        <h3 id="tituloconpalatino" class="centrar palatino"> Títulos en Palatino </h3>
-                        <br>
-                        <div class="boxtextpb">
-                            <p>Palatino es usada tradicionalmente para títulos y anuncios de estilo impreso.</p>
-                        </div>
-                    </div>
-                    <div class="boxflex1">
-                        <h3 id="tituloconimpact" class="centrar"> Títulos en Impact </h3>
-                        <br>
-                        <div class="boxtextwb">
-                            <p>Impact es otra opción de título audaz que se ve muy bien en unas pocas palabras.</p>
-                        </div>
-                    </div>
-
-                </div>
-                <br> <br><br>
-                <div class="containerflex3">
-                    <div class="boxflex1">
-                        <h3 class="centrar" id="tituloconmontserrat"> Títulos en Montserrat </h3>
-                        <br>
-                        <div class="boxtextwb">
-                            <p>Y esta es mi favorita, Montserrat, le va realmente muy bien a los títulos. Es fácil de leer y agradable.</p>
-                        </div>
-                        
-                    </div>
-                    <div class="boxflex2">
-                        <h3 class="centrar courier"> Títulos en Courier </h3>
-                        <br>
-                        <div class="boxtextpb">
-                            <p>Courier is a monospaced slab serif typeface. The fallback font is monospace</p>
-                        </div>
-                    </div>
-                    <div class="boxflex1">
-                        <h3 class="centrar sanserif"> Títles in Sans-serif </h3>
-                        <br>
-                        <div class="boxtextwb">
-                            <p>Sans-serif, sans serif, gothic, or simply sans letterform is one that does not have extending features called "serifs" at the end of strokes.[</p>
-                        </div>
-                    </div>
-
-                </div>
-                <br>
-            
-            </article>
-        </section>
-        
-        <section class="margins">
-            <hr class="divisora">
-            <article>
-                             
-                <br>
-                <h2> Las fuentes más usadas </h2>
-                <br>
-                <p>Helvetica, Impact, Verona y palatino no estan en google fonts</p>
-                <br>
-                <h3>Verdana</h3>
-                <br>
-                <p>La fuente predeterminada de esta página es verdana. Este tipo de letra es fácil de leer, 
-                    incluso cuando se utilizan tamaños de fuente pequeños o cuando se muestra en pantallas de baja 
-                    resolución. Esto hace que Verdana sea una excelente fuente de pantalla.
-                </p>
-                <br>
-                <h3>Quicksand</h3>
-                <br>
-                <p class="quicksandbook">
-                    Esta fuente es Quicksand Book. Se destaca por sus formas geométricas. Es muy agradable de leer y es 
-                    una excelente opción como cuerpo de texto.
-                </p>
-                <br>
-                <p class="quicksandbook">        
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Sem nulla pharetra diam sit amet nisl suscipit adipiscing. Vitae congue eu consequat ac. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh. Ac turpis egestas maecenas pharetra. Etiam dignissim diam quis enim lobortis scelerisque. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. At volutpat diam ut venenatis tellus in metus vulputate eu. Augue lacus viverra vitae congue eu. Suspendisse sed nisi lacus sed viverra tellus in hac. Id consectetur purus ut faucibus pulvinar elementum integer. Faucibus et molestie ac feugiat sed lectus vestibulum mattis. Libero enim sed faucibus turpis in eu. Venenatis tellus in metus vulputate eu scelerisque.
-                </p>
-                <br>
-
-                <h3>Montserrat</h3>
-                <br>
-                <p class="montserrat">
-                    Montserrat es una fuente más fuerte. Debido a su alto rango de legibilidad, también habita en 
-                    muchas aplicaciones de uso frecuente, lo que la convierte en una tipografía apta para 
-                    medios web y para soportes físicos. Sin duda alguna no deja que desear.
-                </p>
-                <br>
-                <p class="montserrat">                 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Sem nulla pharetra diam sit amet nisl suscipit adipiscing. Vitae congue eu consequat ac. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh. Ac turpis egestas maecenas pharetra. Etiam dignissim diam quis enim lobortis scelerisque. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. At volutpat diam ut venenatis tellus in metus vulputate eu. Augue lacus viverra vitae congue eu. Suspendisse sed nisi lacus sed viverra tellus in hac. Id consectetur purus ut faucibus pulvinar elementum integer. Faucibus et molestie ac feugiat sed lectus vestibulum mattis. Libero enim sed faucibus turpis in eu. Venenatis tellus in metus vulputate eu scelerisque.
-                    </p>
+                    <p>Here is a list of fonts that are commonly used on web pages.</p>
                     <br>
-                
-                <!-- Hillenberg -->
-            <!--  <h3>Poppins</h3> -->
-                    <!-- Soleil -->
-                    <!-- Iterstate -->
-                    <!-- Europa Mukta Freeline Nexa Calendas Plus Titillium (buena pa que vaya con imagenes) Woodlamd -->
+                    <h3 class="verdana">Verdana</h3>
+                    <p class="verdana">This typeface is easy to read, even when using small font sizes or when displayed on low-resolution screens. This makes Verdana an excellent display font.</p>
+                    <br>
+                    <h3 class="quicksandbook">Quicksand book</h3>
+                    <p class="quicksandbook">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Sem nulla pharetra diam 
+                        sit amet nisl suscipit adipiscing. Vitae congue eu consequat ac. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh. Ac turpis egestas maecenas pharetra. Etiam dignissim diam quis enim 
+                        lobortis scelerisque. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. At volutpat diam ut venenatis tellus in metus vulputate eu. Augue lacus viverra vitae congue eu. Suspendisse 
+                        sed nisi lacus sed viverra tellus in hac. Id consectetur purus ut faucibus pulvinar elementum integer. Faucibus et molestie ac feugiat sed lectus vestibulum mattis. Libero enim sed faucibus turpis in eu. 
+                        Venenatis tellus in metus vulputate eu scelerisque.</p>
+                    <br>
+                    <h3 class="montserrat">Montserrat</h3>
+                    <p class="montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Sem nulla pharetra diam 
+                        sit amet nisl suscipit adipiscing. Vitae congue eu consequat ac. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh. Ac turpis egestas maecenas pharetra. Etiam dignissim diam quis enim 
+                        lobortis scelerisque. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. At volutpat diam ut venenatis tellus in metus vulputate eu. Augue lacus viverra vitae congue eu. Suspendisse 
+                        sed nisi lacus sed viverra tellus in hac. Id consectetur purus ut faucibus pulvinar elementum integer. Faucibus et molestie ac feugiat sed lectus vestibulum mattis. Libero enim sed faucibus turpis in eu. 
+                        Venenatis tellus in metus vulputate eu scelerisque.</p>
+                    <br>
+                    <h3 class="verona">Verona</h3>
+                    <p class="verona">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Sem nulla pharetra diam 
+                        sit amet nisl suscipit adipiscing. Vitae congue eu consequat ac. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh. Ac turpis egestas maecenas pharetra. Etiam dignissim diam quis enim 
+                        lobortis scelerisque. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. At volutpat diam ut venenatis tellus in metus vulputate eu. Augue lacus viverra vitae congue eu. Suspendisse 
+                        sed nisi lacus sed viverra tellus in hac. Id consectetur purus ut faucibus pulvinar elementum integer. Faucibus et molestie ac feugiat sed lectus vestibulum mattis. Libero enim sed faucibus turpis in eu. 
+                        Venenatis tellus in metus vulputate eu scelerisque.</p>
+                    <br>
+                    <h3 class="colibri">Calibri</h3>
+                    <p class="colibri">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Sem nulla pharetra diam 
+                        sit amet nisl suscipit adipiscing. Vitae congue eu consequat ac. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh. Ac turpis egestas maecenas pharetra. Etiam dignissim diam quis enim 
+                        lobortis scelerisque. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. At volutpat diam ut venenatis tellus in metus vulputate eu. Augue lacus viverra vitae congue eu. Suspendisse 
+                        sed nisi lacus sed viverra tellus in hac. Id consectetur purus ut faucibus pulvinar elementum integer. Faucibus et molestie ac feugiat sed lectus vestibulum mattis. Libero enim sed faucibus turpis in eu. 
+                        Venenatis tellus in metus vulputate eu scelerisque.</p>
+                    <br>
+
                     
-                <!--  <h3>Baskerville (estilo clasico)</h3>
-                    <br> -->
-
-                <h3>Verona (muy clásica)</h3>
+                    
+                    
+                    <br><br>
+                    
+                </article>
                 <br>
-                <p class="verona">
-                    Puede utilizar Verona para crear diseños interesantes, cubiertas, tiendas y nombres y logotipos 
-                    de tiendas. Es una tipografía tradicional.
-                </p>
-                <br>
-                <p class="verona">                   
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Sem nulla pharetra diam sit amet nisl suscipit adipiscing. Vitae congue eu consequat ac. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh. Ac turpis egestas maecenas pharetra. Etiam dignissim diam quis enim lobortis scelerisque. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. At volutpat diam ut venenatis tellus in metus vulputate eu. Augue lacus viverra vitae congue eu. Suspendisse sed nisi lacus sed viverra tellus in hac. Id consectetur purus ut faucibus pulvinar elementum integer. Faucibus et molestie ac feugiat sed lectus vestibulum mattis. Libero enim sed faucibus turpis in eu. Venenatis tellus in metus vulputate eu scelerisque.
-                    </p>
-                        <br>
-
-                <!--    <br>
-                    <h3>Finland (para titulos)</h3>
-                    <br>
-                    Averta (como arial black) -->
-
-                <h3>Calibri (muy estándar)</h3>
-                <br>
-                <p class="colibri">
-                    Calibri es la primera tipografía paloseco utilizada por defecto en el procesador de textos Microsoft 
-                    Office Word. Calibri, junto con Candara, Consolas, Cambria, Corbel y Constantia, forma parte de los 
-                    seis nuevos tipos de letras occidentales (romano, griego y cirílico) de la colección de ClearType que 
-                    se incluyen con Microsoft Windows Vista
-                </p>
-                <br>
-                <p class="colibri">     
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem. Sem nulla pharetra diam sit amet nisl suscipit adipiscing. Vitae congue eu consequat ac. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh. Ac turpis egestas maecenas pharetra. Etiam dignissim diam quis enim lobortis scelerisque. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. At volutpat diam ut venenatis tellus in metus vulputate eu. Augue lacus viverra vitae congue eu. Suspendisse sed nisi lacus sed viverra tellus in hac. Id consectetur purus ut faucibus pulvinar elementum integer. Faucibus et molestie ac feugiat sed lectus vestibulum mattis. Libero enim sed faucibus turpis in eu. Venenatis tellus in metus vulputate eu scelerisque.
-                    </p>
-                    <br>
-                <br>
-                <!--  <h3>Helvetica now (titulos)</h3> -->
-                <br>
-                <p>Consulta esta web, aparecen informaciones relevantes sobre las fuentes a utilizar <a href="https://blog.hubspot.es/website/tipografias-para-web">https://blog.hubspot.es/website/tipografias-para-web </a> </p>
-                    <br>
-                <br/>
-            </article>
+                <hr>
+            </div>
         </section>
 
-        <section class="margins">
-
-                <hr class="divisora">
-                
-                <br/>
-                
-                <h2>Métodos para introducir una fuente a una página</h2>
-                <br>
-                <p>La manera más simple y más lógica de introducir una fuente a una página es asignarla como atributo al parámetro font-family en CSS.
-                    Ya sea por CSS externo, la mejor opción para tener un código limpio y reducir el peso de cada página. Pero esto solo funciona si 
-                    tienes la fuente previamente instalada en tu computador. De lo contrario, o bien debes instalar la fuente en tu carpeta de fuentes, o bien puedes hacer lo que voy a mostrar a continuación: </p>
-
-                <br/>
-                
-                <div>
-
-                    <h3>¿Cómo introducir una fuente a una página sin que ésta esté instalada en tu computador?</h3>
-                    <br/>
-                    <h4>Opcion 1: descargando la fuente</h4>
-                    <p>De esta manera introduje la fuente Quicksand a esta página: como mi computador no la tenía, la descargué en archivo otf. La guardé 
-                        en la misma carpeta en la que tengo esta página. Después, dentro de la etiqueta style usando CSS la “llamé” introduciendo este comando:</p>
-
-                        <br/>
-
-                        <div>
-                            <figure><img src="imagenes/fontfacequicksand.JPG">
-                            <figcaption>asi se escribe</figcaption>
-                            </figure>
-                        
-                        </div>
-
-                        <br/>
-                            
-                    <p>Ahora la fuente ya está disponible en los estilos de la página. Después, lo que se debe hacer es asignarla a una clase o id. De esta manera, 
-                        la fuente podrá ser cargada a través de una etiqueta html. </p> 
-                        <br/>
-
-                        <div>
-                        <img src="imagenes/clasequicksand.JPG">
-                        </div>
-
-                        <br/>
-                    
-                    <p>El comando font no me carga la fuente sin los parámetros normal y em, no se a que se debe.</p>
-                    <br/>
-                    
-                        <div>
-                        <img src="imagenes/parrafoconclase.JPG">
-                        </div>
-
-                        <br/>
-
-                    <p>Este párrafo llama a la clase .quicksandbook</p>
-
-                    <br/>
-
-                    <p class="quicksandbook">Y este es el resultado, como ves aquí tenemos un párrafo de fuente Quicksandbook . Después de los pasos 
-                        que hemos visto, a cualquier párrafo, div o elemento al que le des esta clase, todo lo que pongas dentro de esa etiqueta aparecerá 
-                        en fuente Quicksandbook.
-                    </p>
-
-                    <br/>
-
-                    <p class="quicksandbook"> 
-                    "La manera más simple y más lógica de introducir una fuente a una página es asignarla como atributo al parámetro font-family en CSS.
-                    Ya sea por CSS externo, la mejor opción para tener un código limpio y reducir el peso de cada página. O como lo hice yo en CSS 
-                    interno, fabricandolo dentro de unas etiquetas style dentro del head de la página. Pero esto solo funciona si 
-                    tienes la fuente previamente instalada en tu computador. De lo contrario, o bien debes instalar la fuente en tu carpeta de fuentes, 
-                    o bien puedes hacer lo que voy a mostrar a continuación:"
-                    </p>
-                    
-                </div>
-                <br>
-                <div>
-                    <h3>Opcion 2: Google Fonts</h3>
-                    <p>https://www.freecodecamp.org/news/how-to-use-google-fonts-in-your-next-web-design-project-e1ad48f1adfa/</p>
-                </div>
-
-                <br/>
-                <hr class="divisora">
-                
-                <br/>
-        </section>
-        
-        <section class="margins">
-            <article>
-                <h2>Paletas de colores</h2>
-
-                <br/>
-
-                <p>Esta web ofrece paletas interesantes para la creación de tus webs. Ten siempre en cuenta las paletas para hacer diseños armónicos
-                    <a href=https://99designs.es/blog/tips/website-color-schemes>https://99designs.es/blog/tips/website-color-schemes/ </a></p>
-
-                <br/>
-
-
-            </article>
-
-        </section>
     </main>
-	
+
+    <footer id="footerflex">
+        <div id="cajafooterizquierda" class="cajasflex">
+            <!-- <ul class="listfooter">
+                <li><a href="">Home</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Work profile</a></li>
+                <li>Contact</li>
+            </ul> -->
+            <br>
+        </div>
+
+        <div class="cajasflex centrar">
+            <div>
+                <img src="imagenes/Ollin logo letras.png" alt="ollindesigns" >
+            </div>
+            <br><br>
+            <div >
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" >
+                    <img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+                </a>
+                <br />
+                <p id="creativec">This work is under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="cajasflex">
+            <!-- <ul class="listfooter">
+                <li>sitemap</li>
+                <li>back to top links</li>
+                <li>related documents</li>
+            </ul> -->
+        </div>
+        
+    </footer>
+    
 </body>
-	
 </html>

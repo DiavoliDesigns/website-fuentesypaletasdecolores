@@ -15,45 +15,59 @@ ol { padding-left: 1.4em; list-style: decimal; }
 ul { padding-left: 1.4em; list-style:square; }
 q:before, q:after { content:''; }
 
-/*fin del reset css / comienzo del estilo CSS de la pagina*/
+/*end of reset css*/
 
 body{
-    font-family: 'verdana';
+    background: #f0ecfe;
 }
 
-/*aqui los titulos*/
-
-h1{
-    text-align: center;
-    font-family: 'montserrat', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
+main{
+    border-bottom: 0px;
 }
 
-h2{
-    font-family: 'helvetica', sans-serif;
-    font-weight: bold;
-    font-size: 2.3em;
-    color: #ef9273;
+
+section{
+    margin-left: 160px;
+    margin-right: 160px;
 }
 
-h3{
-    /* margin-top: 15px;
-    margin-left: 50px; */
-    font-family: 'helvetica' sans-serif;
-    font-size: 1.5em;
-    color:#0d0d0d;
+footer{
+    background: #272155;
+    margin-left: 160px;
+    margin-right: 160px;
+    font-family: sans-serif;
+    color: #a197ee;
 }
 
-h5{
-    font: normal 1em 'personalized-font';
+    footer li{
+        list-style: none;
+        margin:0;
+    }
+    footer a:link{
+        color:#8f82eb;
+    }   
+    footer a:visited{
+        color:#6958e4;
+    }
+    footer a:hover{
+        color:#e458d3;
+    } 
+    a:active{
+        color:#e458b0;
+    }
+
+hr{
+    height: 3px;
+    background-color: #ff533d;
+    border: none;
 }
 
-figure {
+figure{
     margin: 0;
 }
 
-/*este es el comando para cargar una fuente desde un archivo en la carpeta de nuestro site*/
+
+/* @font-face */
 
 @font-face {
     font-family: 'personalized-font';
@@ -64,17 +78,96 @@ figure {
     font-family: 'personalized-font1';
     src:url("Palatino.ttf")
 }
-/* aqui pondre una class center para centrar cosas */
 
-.margins{
-    margin-right: 250px;
-    margin-left: 250px;
+/* class */
+
+.menu {
+    display: flex ;
+	justify-content:flex-end;
+    align-items: center;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
 }
+
+
+.nav > li{
+    float:left;
+    font-family: 'calibri';
+    list-style: none;
+    font-size: 1.2em;
+    }
+    
+    .nav li a{
+        color: #6958e4;
+        text-decoration:none;
+        padding:10px 12px;
+        display:block; 
+        }
+    
+        .nav li a:hover {
+            background-color:#272155;
+            color:#a197ee;
+            }
+    
+    .nav li ul {
+        display:none;
+        position:absolute;
+        min-width:140px;
+    }
+
+.fontsforwebcontent{
+    background: #f0ecfe;
+}
+
+.normaltext{
+    font-family: sans-serif;
+    padding:50px;
+    padding-top:25px;
+    padding-bottom:25px;
+    color: #211a3e;
+    font-size: 1.2em;
+}
+    .normaltext h2{
+        color: #0f1626;
+        text-align: center;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .normaltext h3{
+        color: #ff533d;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 8px;
+        margin-top: 15px;
+    }
+
+    .normaltext figcaption{
+        padding: 5px;
+        font-size: 0.8em;
+    }
+
+    .normaltext a {
+        text-decoration:none;
+        font-weight: bold;
+   }
+
+        .normaltext a:link {
+        color:#211a3e;
+        }   
+        .normaltext a:visited {
+        color:#42378e;
+        }
+        .normaltext a:hover{
+        color:#ff533d;
+        } 
+        .normaltext a:active{
+        color:#e458b0;
+        }
 
 .centrar{
     text-align: center;
 }
-/* CLASS*/
 
 .containerflex3{
     display: flex;
@@ -82,48 +175,71 @@ figure {
 
 .boxflex1{
     margin-top: 2px;
-    background-color: #ef9273;
+    background-color: #ff533d;
     width: 32%;
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 20px;
 }
 .boxflex2{
+    background-color: #ab9874;
     margin-right: 15px;
     margin-left: 15px;
     width: 32%;
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 20px;
-    border:#ef9273 2px solid;
+    border:#0f1626 2px solid;
 }
 
 .boxtextwb{
-    background:#fef9f8;
+    background:#f5f5f5;
     color: black;
     margin-bottom: 10px;
-    padding:10px
+    padding:10px;
+    font-family: sans-serif;
+    font-weight: 1.5 em;
 }
 
 .boxtextpb{
-    background:#ef9273;
+    background:#ff533d;
     color: black;
     margin-bottom: 10px;
-    padding:10px
+    padding:10px;
+    font-family: sans-serif;
+    font-weight: 1.5 em;
 }
 
-.times-new-roman {
-	font-family: 'Times New Roman', serif;
+.flexbox3title{
+    font-size: 2em;
+    text-align: center;
+    color: #0f1626;
+    font-weight: bold;
 }
+
+.highochre{
+    background:  #ab9874;
+    padding:20px;
+    border: 3px solid #0f1626;
+    border-radius: 5px;
+}
+    .highochre p {
+        font-weight: bold;
+    }
+
+/* class for fonts */
+
+.times-new-roman{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 
 .courier {
 	font-family: 'Courier Prime', monospace;
-    font-size: 2.2em;
 }
 
 .sanserif{
     font-family: sans-serif;
-    /* font-size: 2em; */
 }
 
 .palatino {
@@ -136,82 +252,102 @@ figure {
 }
 
 .montserrat{
-    font-family: 'montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .colibri{
-    font-family: 'calibri';
+    font-family: 'calibri', sans-serif;
     font-size: large;
 } 
 
 .verona{
-    font-family: 'verona';
-    font-size: large;
+    font-family: 'verona' sans-serif;
+    
 }
 
-/* clase para la hr */
+.verdana{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+/* este es el menu desplegable */
+        .nav li:hover > ul{
+            display:block;
+            background-color: #0d0b1c;
+            color:#6958e4;
+            }
 
-.divisora{
-    color:#ef9273;
-    height: 1px;
-    background: #ef9273;
+.cajasflex{
+    /*  margin-left: 5px;esta propiedad es para distanciar las cajas unas de otras */
+        margin: 5px;
+        padding: 30px;
+        float: left;
+        width: 30%;
+        }
+
+/* id */
+
+#logo{
+    /* width: 60px; este era del logo sin letras */
+    height: 60px;
+    float: left;
+    margin-right: 0px;
+    padding: 0px;
 }
 
-/* aqui la id para el header */
+#botonmenu{
+    background-color:#0e0e16 ;
+    color:#6958e4;
+    border:2px #6958e4 solid;
+    text-align: center;
+    padding:10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right:10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .10);
+}
+    #botonmenu:hover {
+        background-color:#42378e;
+        color:#a197ee;
+        border:2px #a197ee solid;   
+        }
 
-#headerdelapagina{
-    background-color: #ef9273;
-    padding-bottom: 10px;
+#marginnav{
+    padding-bottom: 6px;
+    background: #0d0b1c;    
 }
 
-/* aqui la id para section */
 
-#sectiondelapagina{
-    background-color: #fef9f8;
+#footerflex{
+    display: flex;
+    margin-top: 50px;
 }
 
-/* id para article */
-
-/* #elarticle{
-    margin-left: 100px;
-    margin-right: 100px;
-} */
-
-/* id para titulo con times */
-
-#titulocontimes{
-    font-family:'Times New Roman', Times, serif ;
-    font-size: 1.8em;
-    color:#0d0d0d;
+#cajafooterizquierda{
+    margin-left:7px;
 }
 
-/* id para titulo palatino */
-
-#tituloconpalatino{
-    font: normal 2.4em 'personalized-font1';
-    color:#0d0d0d;
-    /*font-family:'Palatino' ;*/
+#title{
+    background: #0f1626;
 }
-
-/* id para titulo impact */
-
-#tituloconimpact{
-    font-family:"Impact" ;
-    font-weight: lighter;
-    color:#0d0d0d;
-    font-size: 2.3em;
-}
-
-    /* id para titulo Montserrat */
-
-    #tituloconmontserrat{
-    font-family:'montserrat' ;
-    color:#0d0d0d;
-    font-size: 1.7em
-}
-
-/* id para textodeheader */
-
-#textodeheader{
-    font-size: 0.8em
-}
+    #title h1{
+        color:#ff533d;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3.6em;
+        font-weight: bold;
+        padding-top: 50px;
+        margin-bottom: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    #title p{
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom:20px;
+        color:#ab987a;
+        font-size: 1.5em;
+    }
